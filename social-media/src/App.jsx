@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// FIX: Change BrowserRouter to HashRouter
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -13,6 +14,7 @@ import './styles/App.css';
 function App() {
   return (
     <ThemeProvider>
+      {/* HashRouter handles the routing correctly on GitHub Pages */}
       <Router>
         <div className="app-wrapper">
           <Header />
