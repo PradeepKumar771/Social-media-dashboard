@@ -1,0 +1,114 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background-color: var(--hover-bg);
+}
+
+.avatarPlaceholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.avatarImage {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.username {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.time {
+  color: var(--secondary-text);
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+
+.followBtn {
+  padding: 8px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.followBtn:hover {
+  opacity: 0.9;
+}
+
+.postThumb {
+  width: 44px;
+  height: 44px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.postThumbImage {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 20px;
+  }
+
+  .item {
+    padding: 8px;
+  }
+
+  .followBtn {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}
